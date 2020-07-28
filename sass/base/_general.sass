@@ -1,0 +1,106 @@
+@import vars
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent-yellow
+  color: #fff
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  background-color: #E5E5E5
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: #ED6747
+    &:required:valid
+      border-color: green
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+b, strong
+  font-weight: bold
+
+a:hover, a:active, a:focus
+  color: $accent-yellow
+  text-decoration: none
+
+a
+  color: #fff
+  text-decoration: none
+  transition: all .3s ease
+
+a, li, button
+  outline: none!important
+  transition: all .3s ease
+
+ul
+  list-style-type: none
+  padding: 0
+  margin-bottom: 0
+
+.hidden
+  display: none!important
+// ======= END TEMPLATE STYLES =======
+
+.btn
+  position: relative
+  width: 336px
+  font-size: 14px
+  font-weight: 700
+  text-align: left
+  display: inline-block
+  white-space: nowrap
+  padding: 21px 32px
+  +mt(.3s)
+  border-radius: 5px
+  box-shadow: none
+  border: none
+  cursor: pointer
+  background-color: $accent-yellow
+  color: #2F3A4F
+  &.disabled
+    filter: grayscale(.7)
+    pointer-events: none
+  &:focus, &:active
+    color: #2F3A4F
+  &:hover
+    color: #2F3A4F
+    background-color: lighten($accent-yellow, 20%)
+  &:after
+    position: absolute
+    content: '→'
+    right: 30px
+
+
+
+
+
+.section-title
+  font-size: 35px
+  line-height: 1.5
+  font-weight: 700
+  margin-bottom: 50px

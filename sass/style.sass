@@ -1,2 +1,62 @@
 @import "../node_modules/bootstrap/scss/bootstrap-reboot"
 @import "../node_modules/bootstrap/scss/bootstrap-grid"
+
+@import base/fonts
+@import base/vars
+@import base/mixins
+@import base/general
+
+// Always on the end
+@import base/media
+
+
+
+.container, .container-sm, .container-md, .container-lg, .container-xl
+   max-width: 1180px
+
+.s-header
+   background: url(../img/header-bg.jpg)
+   background-color: #27344F
+   +bg-cover
+   background-size: contain
+   padding: 39px 0 59px
+
+.header-wrap
+   display: flex
+   justify-content: space-between
+   align-items: center
+.header-contacts
+   font-size: 14px
+   font-weight: bold
+   width: 400px
+   display: flex
+   justify-content: space-between
+
+.header-mail
+   background-image: url('../img/icons/mail.svg')
+   background-size: 22px 16px
+   background-position: left center
+   background-repeat: no-repeat
+   transition: all .3s ease
+   padding-left: 35px
+.intro-wrap
+   padding: 70px 0 110px
+   h1
+      font-size: 58px
+      font-weight: bold
+      color: #ffffff
+      margin-bottom: 30px
+   p
+      color: #ffffff
+      max-width: 730px
+.s-title
+   padding: 55px 0
+   font-size: 22px
+   background-color: #fff
+
+.title-wrap
+   display: inline
+   p
+      padding-left: 100px
+   img
+      margin-bottom: -70px
