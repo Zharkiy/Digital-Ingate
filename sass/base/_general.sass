@@ -24,7 +24,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
-  background-color: #E5E5E5
+  background-color: #F6F7F8
   input, textarea
     border: #666 1px solid
     outline: none
@@ -95,12 +95,28 @@ ul
     content: '→'
     right: 30px
 
+.btn-description
+  margin-top: 90px
+  margin-bottom: 125px
+  &.disabled
+    filter: grayscale(.7)
+    pointer-events: none
+  &:focus, &:active
+    color: #fff
+  &:hover
+    color: #fff
+    background-color: #313896
+  &:after
+    position: absolute
+    content: '→'
+    right: 30px
+
 
 
 
 
 .section-title
-  font-size: 35px
-  line-height: 1.5
+  font-size: 38px
   font-weight: 700
-  margin-bottom: 50px
+  margin-bottom: 20px
+  padding-top: 100px
