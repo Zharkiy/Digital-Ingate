@@ -402,9 +402,107 @@
 		<div class="container">
 			<h2 class="section-title">Оставить заявку</h2>
 			<p>Оставляя заявку, ты получаешь запись первого digital интенсива Ingate из 6-ти модулей и все материалы спикеров (чек-листы, презентации, полезные ссылки)</p>
+
+			<form class="contact-form section-form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Digital" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="Digital@mail.ru"
+            />
+            <input
+              type="hidden"
+              name="form_subject"
+              value="Заявка с сайта Digital"
+            />
+            <!-- END Hidden Required Fields -->
+
+            <div class="form-labels-wrap">
+              <div class="form-top">
+              	<label>
+	                <input
+	                  type="text"
+	                  placeholder="Имя и фамилия"
+							name="Имя и фамилия"
+							class="input"
+	                  autocomplete="off"
+	                  data-validation="custom"
+	                  data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$"
+	                />
+					  </label>
+
+					  <label>
+						<input
+						  type="text"
+						  placeholder="Промокод"
+						  name="Промокод"
+						  class="input"
+						  autocomplete="off"
+						  data-validation="custom"
+						  data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$"
+						/>
+						</label>
+
+						<button type="submit" class="btn btn-description">Отправить заявку</button>
+              </div>
+
+					<div class="form-bot">
+						<label>
+						<input
+							type="text"
+							name="Email"
+							placeholder="Email"
+							class="input"
+							autocomplete="off"
+							data-validation="custom"
+							data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$"
+						/>
+						</label>
+
+						<label>
+							<input
+							type="text"
+							class="user-phone input"
+							name="Телефон"
+							placeholder="Телефон"
+							autocomplete="off"
+							data-validation="custom"
+
+							data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+							/>
+						</label>
+					</div>
+					<span class="form-title">Отправляя форму, ты соглашаешься с условиями обработки персональных данных.</span>
+
+
+            </div>
+          </form>
+
+
 		</div>
 	</section>
 	<!-- s-form -->
+
+
+	<section class="s-footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<a href="#0"><img src="img/logo-black.png" alt="лого"></a>
+				<div class="copyright">© 2020, ООО ingate</div>
+				<div class="footer-contacts">
+					<a class="footer-tel" href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00</a>
+					<a class="footer-mail" href="mailto:info@ingate.ru ">info@ingate.ru </a>
+				</div>
+				<div class="footer-social">
+					<a href="#0"><img src="img/icons/fa.png" alt=""></a>
+					<a href="#0"><img src="img/icons/vk.png" alt=""></a>
+					<a href="#0"><img src="img/icons/inst.png" alt=""></a>
+					<a href="#0"><img src="img/icons/telegram.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 <script src="js/script.js"></script>
